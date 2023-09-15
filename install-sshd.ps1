@@ -18,6 +18,8 @@ $sshagentpath = Join-Path $scriptdir "ssh-agent.exe"
 # This is the element shown in the error message
 $etwman = Join-Path $scriptdir "openssh-events.man"
 
+Write-Host "=== etwman: $etwman"
+
 if (-not (Test-Path $sshdpath)) {
     throw "sshd.exe is not present in script path"
 }
